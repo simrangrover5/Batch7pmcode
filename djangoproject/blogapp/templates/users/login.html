@@ -1,0 +1,20 @@
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'abc.css' %}">
+    </head>
+    <body>
+        {% include 'users/header.html' %}
+        {% block head %}
+        {% endblock %}
+        {% if error %}
+        <h1>{{ error }}</h1>
+        {% endif %}
+        <form method="POST" action="/users/login1/">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value='LOGIN'>
+            <a href="/users/forgot/">FORGOT</a>
+        </form>
+    </body>
+</html>

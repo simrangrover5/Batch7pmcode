@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: black;
+                font-style: italic;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            p{
+                color: brown;
+                font-size:30px;
+                font-style: italic;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            body{
+                background: linear-gradient(coral,blue)
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is first project of flask</h1>
+        {% if name %}
+        <p>Welcome to my world {{ name }}</p>
+        {% endif %}
+        {% if data %}
+        {% for key,value in data.items() %}
+        <h1>{{ key }}={{ value }}</h1>
+        {% endfor %}
+        {% endif %}
+        <a href="/logout/">LOGOUT</a>
+    </body>
+</html>

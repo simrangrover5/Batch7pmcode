@@ -1,0 +1,17 @@
+li{
+    display: inline-block;
+    padding: 15px;
+}
+a{
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(#1690E2,#FF5733  )
+}
+li:hover{
+    transform: scale(1.2);
+}

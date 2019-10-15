@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        {% include 'index.html' %}
+        {% block head %}
+        {% endblock %}
+        {% if error %}
+        <h1 style="color:red">{{ error }}</h1>
+        {% endif %}
+        <form method="POST" action="/login1/">
+            <label>Enter your email : </label><br>
+            <input type="email" name="email"><br><br>
+            <label>Enter your password : </label><br>
+            <input type="password" name="pswd"><br><br>
+            <input type="submit" value="LOGIN">
+        </form>
+    </body>
+</html>

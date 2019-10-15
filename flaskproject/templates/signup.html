@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        {% include 'index.html' %}
+        {% block head %}
+        {% endblock %}
+        {% if error %}
+        <h1>{{ error }}</h1>
+        {% endif %}
+        <form method="POST" action="/signup1/" enctype="multipart/form-data">
+            <label>Enter your email : </label><br>
+            <input type="email" name="email"><br><br>
+            <label>Enter your password : </label><br>
+            <input type="password" name="pswd"><br><br>
+            <label>Enter your confirm password : </label><br>
+            <input type="password" name="cpswd"><br><br>
+            <input type="file" name="myfile"><br><br>
+            <input type="submit" value="SIGNUP">
+        </form>
+    </body>
+</html>
