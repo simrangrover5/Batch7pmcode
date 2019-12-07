@@ -1,3 +1,9 @@
+# git config --global user.name gitusername
+# git config --global user.email git email address
+config command will configure your credentials over git repository and if you
+used --global it will apply to all repository current or future
+
+
 1. git --version #see the version of git
 
 2. git init #to intialize git
